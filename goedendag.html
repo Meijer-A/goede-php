@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>goedendag</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <script>
+    document.getElementById("demo").innerHTML = Date();
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer() {
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    }
+
+    </script>
+  </body>
+</html>
